@@ -1,0 +1,119 @@
+/*Seleciona todos os elementos da pagina*/
+*{
+    margin: 0; /*Margem*/
+    padding: 0; /*Preenchimento*/
+}
+
+/*Para selecionar um elemento "ID" usa-se # antes do nome atribuido*/
+#titulo {
+    font-family : sans-serif; /*Fonte*/
+    color : #380B61 ; /*Cor*/
+    margin-left : 7% ; /*Margem a esquerda*/
+}
+
+/*Para selecionar um elemento "ID" usa-se # antes do nome atribuido*/
+#subtitulo{
+    font-family : sans-serif; /*Fonte*/
+    color : #380B61 ; /*Cor*/
+    margin-left: 10% ; /*Margem a esquerda*/
+}
+
+/*Elementos de Tags "fieldset"*/
+fieldset {
+    border:0; /*Borda*/
+}
+
+/*Vai pegar todos os elementos do html (corpo)*/
+body{
+    background-color: #F0F8FF; /*Cor de fundo*/
+    font-family: sans-serif; /*Fonte*/
+    font-size: 1em ; /*Tamanho da fonte*/
+    color: #59429d ; /*Cor*/
+    margin-left: 36% ; /*Margem a esquerda*/
+    margin-top: 2% ; /*Margem superior*/
+    justify-content: center; /*Justificar o conteúdo - deixar no centro da página*/
+}
+
+/*Aplicar a todas as caixas de texto - Elementos das tags "input", "select", "textarea", "button"*/
+input, select, textarea, button{
+    border-radius: 2px; /*Borda das caixas de texto*/
+}
+
+/*Para selecionar um elemento classe "campo" usa-se . antes do nome atribuido*/
+/*Classe com a tag "campo"*/
+.campo{
+    margin-bottom: 1em; /*Margem da parte de baixo do boton*/
+}
+
+/*Para selecionar um elemento classe "campo" usa-se . antes do nome atribuido*/
+/*Classe com a tag "campo label"*/
+.campo label{
+    margin-bottom: 0.2; /*Margem da parte de baixo do boton*/
+    color:#59429d; /*Cor*/
+    display: block; /*Exibição - Quadra/quadrado*/
+}
+
+/*Para selecionar um elemento classe "campo" usa-se . antes do nome atribuido*/
+/*Pegar o elemento "fieldset" "classe grupo" e "classe campo"*/
+fieldset.grupo .campo{
+    float:left; /*Flutuador*/
+    margin-right: 1em; /*Margem a direita*/
+}
+
+/*Para selecionar um elemento classe "campo" usa-se . antes do nome atribuido*/
+/*Elementos da classe "campo e seus atributos"*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.2; /*Preenchimento*/
+    border: 1px solid #59429d; /*Borda//Sólida*/
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /*Sombra da caixa//rgba leva em conta o vermelho, verde e azul*/
+    display: block; /*Exibição - Quadra/quadrado*/
+}
+
+/*Para selecionar um elemento classe "campo" usa-se . antes do nome atribuido*/
+/*Elementos da classe "campo select option"*/
+.campo select option{
+    padding-right: 1em; /*Preenchimento certo*/
+}
+
+/*Para selecionar um elemento classe "campo" usa-se . antes do nome atribuido*/
+/*Elemento de classe "campo com tag <input>", <select> e <textarea>" tocas com estado da pseudoclasse "focus" - Elemento ficará em foco* /**/
+.campo input:focus, .campo select:focus, .campo textarea{
+    background: #e0e0f8; /*Plano de fundo*/
+}
+
+/*Para selecionar um elemento classe "campo" usa-se . antes do nome atribuido*/
+/*Elementos da classe "boton"*/
+.botao{
+    font-size: 1.2em; /*Tamanho da fonte*/
+    background: #59429d; /*Plano de fundo*/
+    border: 0; /*Borda*/
+    margin-bottom: 1em; /*Margem inferior*/
+    color: #ffffff; /*Cor*/
+    padding: 0.2em  0.6em; /*Preenchimento*/
+    box-shadow: 2px  2px  2px  rgba( 0 , 0 , 0 , 0.2 ); /*Sombra da caixa*/
+    text-shadow: 1px  1px  1px  rgba( 0 , 0 , 0 , 0.5 ); /*Sombra do texto*/
+    position:absolute; /*Posição: Absoluta*/
+    top: 95% ; /*Parte do topo*/
+    left: 50% ; /*Parte da Esquerda*/
+    margin-right: -50% ; /*Margem direita*/
+    transform:translate(-50%,-50% ); /*Transformar: Traduzir*/
+}
+
+/*Para selecionar um elemento classe "campo" usa-se . antes do nome atribuido*/
+/*Elementos da classe "boton" - Elemento ficará em foco ao passar o mouse em cima*/
+.botao:hover{
+    background: #CCBBFF; /*Plano de fundo*/
+    box-shadow: inset 2px  2px 2px rgba(0, 0, 0, 0.2 ); /*Sombra da caixa: inserção*/
+    text-shadow: none; /*Sombra do texto: nenhuma*/
+}
+
+/*Para selecionar um elemento classe "campo" usa-se . antes do nome atribuido*/
+/* Elementos de classe "botão e tag <select>"*/
+.botoo, select{
+    cursor: pointer; /*Ponteiro*/
+}
+
+/*Para selecionar um elemento "ID" usa-se # antes do nome atribuido*/
+#check{
+    display: inline-block; /*Exibir em linha, um embaixo do outro*/
+}
