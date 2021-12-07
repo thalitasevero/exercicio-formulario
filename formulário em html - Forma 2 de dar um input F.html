@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste - Forma 2 de dar um input</title>
+</head>
+<body>
+
+    <div>
+        <h1>Cadastro</h1>
+        <p>Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+            <label>Nome</label>
+            <input type="texto" nome="nome" id="nome" required>
+            </div>
+           <br>
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" nome="sobrenome" id="sobrenome" required>
+            </div>           
+        </fieldset>
+        <br>
+
+        <div>
+            <label>Email</label>
+            <input type="email" nome="email" id="email">
+        </div>
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Qual curso gostaria de cursar?</legend>
+                <input type="radio" name="area" value "Administracao" checked> Administração<br/>                
+                <input type="radio" name="area" value "Tecnologia"> Tecnologia<br/>               
+                <input type="radio" name="area" value "ManutencaoIndustrial"> Manutenção Industrial<br/>
+                <input type="radio" name="area" value "Outros"> Outros<br/>                
+            </fieldset>
+            <br>
+            <div>
+                <div>
+                <fieldset>
+                    <legend>Período</legend>
+                    <select id="periodo">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Modo de estudo</legend>
+                    <input type="radio" name="modoestudo" value "ead" checked>EAD<br/>               
+                    <input type="radio" name="modoestudo" value "semipresencial">Semipresencial<br/>
+                    <input type="radio" name="modoestudo" value "Presencial">Presencial<br/>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Quais são as suas maiores dificuldades quanto ao estudo?</legend>
+                    <input type="checkbox" name="dificuldadedeestudo" value="faltadeestrutura">Falta de estrutura<br>
+                    <input type="checkbox" name="dificuldadedeestudo" value="condicoesfinanceiras">Condições financeiras<br>
+                    <input type="checkbox" name="dificuldadeestudo" value="apoiodafamilia">Apoio da familia<br>
+                    <input type="checkbox" name="dificuldadeestudo" value="faltadeinteresse">Falta de interesse<br>
+                <fielset>
+                </label>
+                <label for="outros">Outros</label>
+                <input type="outros" nome="dificuldadedeestudo" id="outros">
+                </div>
+            </div>
+            <div>
+                <fieldset>
+                <legend>Conte um pouco sobre você:</legend>
+                <textarea row="6" style="width: 26em" name="sobrevoce" id="sobrevoce"></textarea>
+            </div>
+            <br>
+
+            <button type="submit">Concluído</button>
+    </form>
+    
+</body>
+</html>
