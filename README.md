@@ -4,7 +4,7 @@ Bem-vindo ao repositório do meu formulário!
 
 ## 📋 Descrição
 
-Este foi o primeiro formulário que desenvolvi para cadastro de DEVs para vagas, e utilizei HTML e CSS.
+Este foi o primeiro formulário que desenvolvi para cadastro de DEVs para vagas, que utiliza HTML e CSS.
 Era um reposiório privado, porém agora está público 😄
 
 ## 🔧 Tecnologias Utilizadas
